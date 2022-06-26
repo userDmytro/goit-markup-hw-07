@@ -1,0 +1,44 @@
+.clients-title{
+    font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--secondary-color);
+margin-bottom: 50px;
+}
+
+.clients-list{
+    display: flex;
+}
+
+.client-link{
+    @extend %align;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;    
+    width: 170px;
+    height: 92px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+    border: 1px solid var(--accent-color);
+}
+}
+
+.client-logo:not(:last-child){
+    margin-right: 30px;
+}
+
+.svg-logo{
+    fill: var(--logo-color);
+}
+
+
+
+.client-link:hover .svg-logo,
+.client-link:focus .svg-logo{
+    fill: var(--accent-color);
+}
+.svg-logo{
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
