@@ -1,18 +1,14 @@
-.caption{
-    visibility: hidden;
-}
-
-.button-items{
+.buttons{
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
 
-.button-item:not(:last-child){
+.buttons__item:not(:last-child){
 margin-right: 8px;
 }
 
-.button{
+.buttons__content{
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;

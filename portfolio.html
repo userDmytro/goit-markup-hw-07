@@ -21,35 +21,39 @@
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
+  </head>
+  <body>
     <header class="page-header">
-      <div class="container navigation-container">
+      <div class="container page-header__container">
         <nav class="navigation">
-        <a class="logo header__logo link" href="" lang="en"
-          >Web<span class="logo__text_color_black">Studio</span></a
+        <a class="logo page-header__logo link" href="" lang="en"
+          >Web<span class="logo__black">Studio</span></a
         >
         <ul class="menu list">
           <li class="menu__item">
-            <a class="menu__link link menu__link-active" href="">Студия</a>
+            <a class="menu__link link" href="">Студия</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link link" href="./portfolio.html">Портфолио</a>
+            <a class="menu__link link menu__link_active" href="./portfolio.html">Портфолио</a>
           </li>
           <li class="menu__item">
             <a class="menu__link link" href="">Контакты</a>
           </li>
         </ul>
         </nav>
-      <ul class="contact list">
-        <li class="contact__items">
-          <a class="contact__link link" href="mailto:info@devstudio.com"
-            ><svg class="contact__icon" width="16" height="12"><use href="./images/symbol-defs.svg#mail"></use></svg>
-            <span class="contact__mail">info@devstudio.com</span></a
+      <ul class="contacts list">
+        <li class="contacts__item">
+          <a class="contacts__link link" href="mailto:info@devstudio.com"
+            ><svg class="contacts__icon" width="16" height="12"><use href="./images/symbol-defs.svg#mail"></use></svg>
+            info@devstudio.com
+            </a
           >
         </li>
-        <li class="contact__items">
-          <a class="contact__link link" href="tel:+380961111111"
-            ><svg class="contact__icon" width="10" height="16"><use href="./images/symbol-defs.svg#phone"></use></svg>
-            <span class="contact__phone">+38 096 111 11 11</span></a
+        <li class="contacts__item">
+          <a class="contacts__link link" href="tel:+380961111111"
+            ><svg class="contacts__icon" width="10" height="16"><use href="./images/symbol-defs.svg#phone"></use></svg>
+            +38 096 111 11 11
+            </a
           >
         </li>
       </ul>
@@ -59,37 +63,37 @@
     <main class="body">
       <section class="section">
         <div class="container">
-          <h1 class="caption visually-hidden">Наши работы</h1>
-          <ul class="button-items list">
-            <li class="button-item">
-              <button class="button" type="button">Все</button>
+          <h1 class="section__title visually-hidden">Наши работы</h1>
+          <ul class="buttons list">
+            <li class="buttons__item">
+              <button class="buttons__content" type="button">Все</button>
             </li>
-            <li class="button-item">
-              <button class="button" type="button">Веб-сайты</button>
+            <li class="buttons__item">
+              <button class="buttons__content" type="button">Веб-сайты</button>
             </li>
-            <li class="button-item">
-              <button class="button" type="button">Приложения</button>
+            <li class="buttons__item">
+              <button class="buttons__content" type="button">Приложения</button>
             </li>
-            <li class="button-item">
-              <button class="button" type="button">Дизайн</button>
+            <li class="buttons__item">
+              <button class="buttons__content" type="button">Дизайн</button>
             </li>
-            <li class="button-item">
-              <button class="button" type="button">Маркетинг</button>
+            <li class="buttons__item">
+              <button class="buttons__content" type="button">Маркетинг</button>
             </li>
           </ul>
-          <ul class="product-list list">
-            <li class="product-list-item">
-              <a class="produkt-link link" href=""> 
-                <div class="overlay-product">
+          <ul class="products-list list">
+            <li class="products-list__item">
+              <a class="produkts-list__link link" href=""> 
+                <div class="produkts-list__box">
                   <img
-                  class="product-list-item-pic"
+                  class="product-list__pic"
                   src="./images/1.jpg"
                   width="370"
                   height="294"
                   alt="ноутбук с изображением веб-сайта"
                 />
-                <div class="product-overlay">
-                  <p class="product-overlay-text">
+                <div class="products-list__overlay">
+                  <p class="products-list__description">
                     Ресурс предлагает комплексные предложения с 
                     разным уровнем функционала и сервисов. Все это позволит 
                     посетителю получить исчерпывающие сведения о компании или 
@@ -98,25 +102,25 @@
                 </div>
                 </div>
                
-                <div class="card-content">
-                  <h2 class="product-list-item-title">Технокряк</h2>
-                  <p class="product-list-item-text">Веб-сайт</p>
+                <div class="products-list__box-below">
+                  <h2 class="products-list__title">Технокряк</h2>
+                  <p class="products-list__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="product-list-item product-card">
-              <a class="produkt-link link" href="">
-                <div class="overlay-product">
+            <li class="products-list__item">
+              <a class="produkts-list__link link" href="">
+                <div class="produkts-list__box">
                   <img
-                  class="product-list-item-pic"
+                  class="product-list__pic"
                   src="./images/2.jpg"
                   width="370"
                   height="294"
                   alt="два баскетболиста с мячем
                 "
                 />
-                  <div  class="product-overlay" >
-                    <p  class="product-overlay-text">
+                  <div  class="products-list__overlay" >
+                    <p  class="products-list__description">
                       Ресурс предлагает комплексные предложения с 
                     разным уровнем функционала и сервисов. Все это позволит 
                     посетителю получить исчерпывающие сведения о компании или 
@@ -125,27 +129,27 @@
                   </div>
                 </div>
                
-                <div class="card-content">
-                  <h2 class="product-list-item-title">
+                <div class="products-list__box-below">
+                  <h2 class="products-list__title">
                     Постер New Orlean vs Golden Star
                   </h2>
                   <p class="product-list-item-text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="product-list-item product-card">
-              <a class="produkt-link link" href="">
-                <div class="overlay-product">
+            <li class="products-list__item">
+              <a class="produkts-list__link link" href="">
+                <div class="produkts-list__box">
                   <img
-                  class="product-list-item-pic"
+                  class="product-list__pic"
                   src="./images/3.jpg"
                   width="370"
                   height="294"
                   alt="логотип ресторана Seafood
                 "
                 />
-                  <div  class="product-overlay" >
-                    <p  class="product-overlay-text">
+                  <div  class="products-list__overlay" >
+                    <p  class="products-list__description">
                       Ресурс предлагает комплексные предложения с 
                     разным уровнем функционала и сервисов. Все это позволит 
                     посетителю получить исчерпывающие сведения о компании или 
@@ -154,24 +158,24 @@
                   </div>
                 </div>
               
-                <div class="card-content">
-                  <h2 class="product-list-item-title">Ресторан Seafood</h2>
-                  <p class="product-list-item-text">Приложение</p>
+                <div class="products-list__box-below">
+                  <h2 class="products-list__title">Ресторан Seafood</h2>
+                  <p class="products-list__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="product-list-item product-card">
-              <a class="produkt-link link" href="">
-                <div class="overlay-product">
+            <li class="products-list__item">
+              <a class="produkts-list__link link" href="">
+                <div class="produkts-list__box">
                   <img
-                  class="product-list-item-pic"
+                  class="product-list__pic"
                   src="./images/4.jpg"
                   width="370"
                   height="294"
                   alt="наушники"
                 />
-                  <div  class="product-overlay" >
-                    <p  class="product-overlay-text">
+                  <div  class="products-list__overlay" >
+                    <p  class="products-list__description">
                       Ресурс предлагает комплексные предложения с 
                     разным уровнем функционала и сервисов. Все это позволит 
                     посетителю получить исчерпывающие сведения о компании или 
@@ -180,25 +184,25 @@
                   </div>
                 </div>
                
-                <div class="card-content">
-                  <h2 class="product-list-item-title">Проект Prime</h2>
-                  <p class="product-list-item-text">Маркетинг</p>
+                <div class="products-list__box-below">
+                  <h2 class="products-list__title">Проект Prime</h2>
+                  <p class="products-list__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="product-list-item product-card">
-              <a class="produkt-link link" href="">
-                <div class="overlay-product">
+            <li class="products-list__item">
+              <a class="produkts-list__link link" href="">
+                <div class="produkts-list__box">
                   <img
-                  class="product-list-item-pic"
+                  class="product-list__pic"
                   src="./images/5.jpg"
                   width="370"
                   height="294"
                   alt="две коробки с надписями 
                 "
                 />
-                  <div  class="product-overlay" >
-                    <p  class="product-overlay-text">
+                  <div  class="products-list__overlay" >
+                    <p  class="products-list__description">
                       Ресурс предлагает комплексные предложения с 
                     разным уровнем функционала и сервисов. Все это позволит 
                     посетителю получить исчерпывающие сведения о компании или 
@@ -207,25 +211,25 @@
                   </div>
                 </div>
                 
-                <div class="card-content">
-                  <h2 class="product-list-item-title">Проект Boxes</h2>
-                  <p class="product-list-item-text">Приложение</p>
+                <div class="products-list__box-below">
+                  <h2 class="products-list__title">Проект Boxes</h2>
+                  <p class="products-list__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="product-list-item product-card">
-              <a class="produkt-link link" href="">
-                <div class="overlay-product">
+            <li class="products-list__item">
+              <a class="produkts-list__link link" href="">
+                <div class="produkts-list__box">
                   <img
-                  class="product-list-item-pic"
+                  class="product-list__pic"
                   src="./images/6.jpg"
                   width="370"
                   height="294"
                   alt="монитор с изображением веб-сайта 
                 "
                 />
-                  <div  class="product-overlay" >
-                    <p  class="product-overlay-text">
+                  <div  class="products-list__overlay" >
+                    <p  class="products-list__description">
                       Ресурс предлагает комплексные предложения с 
                     разным уровнем функционала и сервисов. Все это позволит 
                     посетителю получить исчерпывающие сведения о компании или 
@@ -234,27 +238,27 @@
                   </div>
                 </div>
               
-                <div class="card-content">
-                  <h2 class="product-list-item-title">
+                <div class="products-list__box-below">
+                  <h2 class="products-list__title">
                     Inspiration has no Borders
                   </h2>
                   <p class="product-list-item-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="product-list-item product-card">
-              <a class="produkt-link link" href="">
-                <div class="overlay-product">
+            <li class="products-list__item">
+              <a class="produkts-list__link link" href="">
+                <div class="produkts-list__box">
                   <img
-                  class="product-list-item-pic"
+                  class="product-list__pic"
                   src="./images/7.jpg"
                   width="370"
                   height="294"
                   alt="открытая книга
                 "
                 />
-                  <div  class="product-overlay" >
-                    <p  class="product-overlay-text">
+                  <div  class="products-list__overlay" >
+                    <p  class="products-list__description">
                       Ресурс предлагает комплексные предложения с 
                     разным уровнем функционала и сервисов. Все это позволит 
                     посетителю получить исчерпывающие сведения о компании или 
@@ -263,27 +267,27 @@
                   </div>
                 </div>
               
-                <div class="card-content">
-                  <h2 class="product-list-item-title">
-                    Издание Limited Edition
+                <div class="products-list__box-below">
+                  <h2 class="products-list__title">
+                    Издание Limited Edit__on
                   </h2>
                   <p class="product-list-item-text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="product-list-item product-card">
-              <a class="produkt-link link" href="">
-                <div class="overlay-product">
+            <li class="products-list__item">
+              <a class="produkts-list__link link" href="">
+                <div class="produkts-list__box">
                   <img
-                  class="product-list-item-pic"
+                  class="product-list__pic"
                   src="./images/8.jpg"
                   width="370"
                   height="294"
                   alt="лейба с надпиью 
                 "
                 />
-                  <div  class="product-overlay" >
-                    <p  class="product-overlay-text">
+                  <div  class="products-list__overlay" >
+                    <p  class="products-list__description">
                       Ресурс предлагает комплексные предложения с 
                     разным уровнем функционала и сервисов. Все это позволит 
                     посетителю получить исчерпывающие сведения о компании или 
@@ -292,24 +296,24 @@
                   </div>
                 </div>
                 
-                <div class="card-content">
-                  <h2 class="product-list-item-title">Проект LAB</h2>
-                  <p class="product-list-item-text">Маркетинг</p>
+                <div class="products-list__box-below">
+                  <h2 class="products-list__title">Проект LAB</h2>
+                  <p class="products-list__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="product-list-item product-card">
-              <a class="produkt-link link" href="">
-                <div class="overlay-product">
+            <li class="products-list__item">
+              <a class="produkts-list__link link" href="">
+                <div class="produkts-list__box">
                   <img
-                  class="product-list-item-pic"
+                  class="product-list__pic"
                   src="./images/9.jpg"
                   width="370"
                   height="294"
                   alt="ноутбук с изображением веб-сайта"
                 />
-                  <div  class="product-overlay" >
-                    <p  class="product-overlay-text">
+                  <div  class="products-list__overlay" >
+                    <p  class="products-list__description">
                       Ресурс предлагает комплексные предложения с 
                     разным уровнем функционала и сервисов. Все это позволит 
                     посетителю получить исчерпывающие сведения о компании или 
@@ -318,9 +322,9 @@
                   </div>
                 </div>
                
-                <div class="card-content">
-                  <h2 class="product-list-item-title">Growing Business</h2>
-                  <p class="product-list-item-text">Приложение</p>
+                <div class="products-list__box-below">
+                  <h2 class="products-list__title">Growing Business</h2>
+                  <p class="products-list__text">Приложение</p>
                 </div>
               </a>
             </li>
@@ -332,7 +336,7 @@
       <div class="container footer-content">
         <div class="address-content">
           <a class="logo footer__logo link" href="" lang="en"
-          >Web<span class="logo__text_color_white">Studio</span></a
+          >Web<span class="logo__white">Studio</span></a
         >
         <address>
           <ul class="contact-list list">
