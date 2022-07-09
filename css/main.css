@@ -1137,17 +1137,11 @@ body {
     background-size: cover;
     max-width: 1600px;
     background-color: #C4C4C4;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-desktop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-bg-desktop.webp);
     background-position: center;
     background-repeat: no-repeat;
   }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-desktop@2x.jpg);
-  }
-}
-@media screen and (min-width: 1200px) {
+
   .hero__title {
     font-weight: 900;
     font-size: 44px;
@@ -1161,8 +1155,7 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-}
-@media screen and (min-width: 1200px) {
+
   .hero__button {
     font-family: var(--primary-font);
     font-weight: 700;
