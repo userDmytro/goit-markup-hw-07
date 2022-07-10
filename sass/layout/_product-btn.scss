@@ -4,12 +4,9 @@
         flex-wrap: wrap;
         margin-bottom: 40px;
     }
-
-    .buttons__item:not(:last-child){
-        margin-right: 8px;
-        margin-bottom: 15px;
-        }
-
+.buttons{
+    gap: 15px 8px;
+}
         .buttons__content{
             @include font(16px, 500, 26px);
             text-align: center;
@@ -35,7 +32,7 @@
 .buttons{
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .buttons__item:not(:last-child){

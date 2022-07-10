@@ -28,7 +28,3 @@ body{
     font-family: var(--primary-font);
     color: var(--text-color);
 }
-
-.section__title{
-  @extend %title
-}

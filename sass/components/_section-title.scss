@@ -1,0 +1,17 @@
+.section__title{
+    text-align: center;
+letter-spacing: 0.03em;
+color: var(--secondary-color);
+}
+@media screen and (max-width: 1199px) {
+    .section__title{
+        @include font(28px, 700, 33px);
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .section__title{
+        @include font(36px, 700, 42px);
+        margin-bottom: 50px; 
+    } 
+}
